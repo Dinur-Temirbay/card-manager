@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="/sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="card">
+      <form class="pay-method-form">
+        <span>Account →</span>
+        <span class="header__text">Payment methods</span>
+        <h1>Choose your payment method</h1>
+        <div class="pay-cards">
+          <div class="add__card">
+            <i
+              class="fa-regular fa-credit-card fa-2xl"
+              style="color: mediumslateblue"
+            ></i>
+            <p>Add Payment Method</p>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <form class="create-card-form">
+        <div class="card__preview">
+          <div class="card__block">
+            <div class="first">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/9334/9334627.png"
+                alt="chip"
+                width="40"
+              />
+              <div style="margin-top: 10px">
+                <span>Dinur Temirbay</span>
+                <i style="margin-left: 30px">09 / 25</i>
+              </div>
+              <span style="font-size: 20px">0000 0000 0000 1600</span>
+            </div>
+            <div class="second">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+                alt="logo"
+                width="50"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card__edit">
+          <div class="left__side">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Dinur Temirbay" />
+            <label>Card Number</label>
+            <input
+              type="number"
+              id="cardNumber"
+              placeholder="9876 9876 9876 9876"
+              maxlength="16"
+              required
+            />
+          </div>
+          <div class="right__side">
+            <label>Expiration</label>
+            <input type="month" id="cardExpiry" required />
+            <label>CVV</label>
+            <input
+              type="password"
+              id="cardCVV"
+              placeholder="●●●"
+              maxlength="3"
+              required
+            />
+          </div>
+        </div>
+        <div class="card__buttons">
+          <button class="cancel-btn">Cancel</button>
+          <button class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

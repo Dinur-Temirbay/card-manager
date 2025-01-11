@@ -1,0 +1,165 @@
+// *
+//     border: 2px solid green
+
+body 
+    margin: 0
+    padding: 0
+    overflow-y: hidden
+    background: linear-gradient(#E9967A, transparent)
+
+$font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+.card 
+    display: flex
+    height: 100vh
+    justify-content: center
+    align-items: center
+    gap: 80px
+    .pay-method-form
+        background-color: white
+        border-radius: 10px
+        padding: 40px
+        min-width: 350px
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        span
+            font-family: $font
+            font-size: 14px
+        .header__text
+            color: purple
+        h1
+            font-family: $font
+            font-weight: 500
+            text-align: center
+        .pay-cards
+            display: flex
+            flex-direction: column
+            gap: 10px
+            .pay__card
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border: 1px solid gray
+                border-radius: 5px
+                padding: 10px 20px 10px 20px
+                margin-bottom: 10px 
+                font-family: $font
+                font-size: 14px
+                font-weight: 500
+                &:hover 
+                    border: 2px solid green
+                .card__actions
+                    position: relative
+                    .action
+                        display: flex
+                        gap: 5px
+                        position: absolute
+                        bottom: 30px
+                        right: 3px
+                        font-size: 14px
+            .add__card
+                display: flex
+                align-items: center
+                gap: 20px
+                border: 1px solid gray
+                border-radius: 5px
+                padding: 20px 
+                font-family: $font
+                cursor: pointer
+                &:hover 
+                    border: 2px solid green
+        button
+            width: 100%
+            padding: 20px 40px
+            background-color: mediumslateblue
+            border: none
+            border-radius: 10px
+            color: white
+            margin-top: 20px
+            cursor: pointer
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+            font-size: 16px
+            font-family: $font
+    .create-card-form
+        display: none
+        background-color: white
+        border-radius: 10px
+        max-width: 450px
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        .card__preview
+            background-color: pink
+            padding: 30px 60px
+            display: flex
+            border-radius: 10px
+            justify-content: center
+            align-items: center
+            .card__block
+                display: flex
+                padding: 20px
+                width: 350px
+                height: 150px
+                color: white
+                font-family: $font
+                border-radius: 10px
+                background: linear-gradient(to right, blue, red)
+                .first
+                    display: flex
+                    flex-direction: column
+                    justify-content: end
+                    width: 80%
+                .second
+                    display: flex
+                    flex-direction: column
+                    justify-content: end
+                    width: 20%
+        .card__edit
+            padding: 30px
+            display: flex
+            max-width: 100%
+            gap: 20px
+            .left__side
+                display: flex
+                flex-direction: column
+                width: 70%
+                gap: 10px
+            label
+                font-family: $font
+                font-size: 13px
+                font-weight: 500
+            input
+                border: 1px solid black 
+                border-radius: 5px
+                padding: 8px
+            .right__side
+                display: flex
+                flex-direction: column
+                width: 30%
+                gap: 10px
+                label
+                    font-family: $font
+                    font-size: 13px
+                    font-weight: 500
+                input
+                    border: 1px solid black 
+                    border-radius: 5px
+                    padding: 8px
+        .card__buttons
+            display: flex
+            gap: 10px
+            margin-bottom: 20px
+            padding: 0px 30px
+            .cancel-btn
+                background-color: white
+                border: none
+                border-radius: 10px
+                padding: 15px 75px
+                color: purple
+                cursor: pointer
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+            .submit-btn
+                background-color: mediumslateblue
+                border: none
+                border-radius: 10px
+                padding: 15px 75px
+                color: white
+                cursor: pointer
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
